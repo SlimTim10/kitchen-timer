@@ -1,0 +1,45 @@
+* BOM
+|------------------------------+-----------------+----------+------------------|
+| Name                         | Unit Cost (CAD) | Quantity | Total Cost (CAD) |
+|------------------------------+-----------------+----------+------------------|
+| [[http://www.digikey.ca/product-detail/en/atmel/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589][ATMEGA328P MCU]]               |            5.34 |        1 |             5.34 |
+| [[http://www.digikey.ca/product-detail/en/fox-electronics/FOXSDLF-160-20/631-1017-1-ND/1024722][16MHz Crystal]]                |            0.46 |        1 |             0.46 |
+| [[https://www.digikey.ca/product-detail/en/kemet/C0805C220J5GACTU/399-1113-1-ND/411388][22pF Capacitor]]               |            0.28 |        2 |             0.56 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577][10k Resistor]]                 |            0.15 |        1 |             0.15 |
+| [[https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR60J106ME19L/490-1718-1-ND/587425][10uF Capacitor]]               |            0.16 |        1 |             0.16 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT330R/RMCF0805JT330RCT-ND/1942547][330 Resistor]]                 |            0.15 |        2 |              0.3 |
+| [[http://www.digikey.ca/product-detail/en/sullins-connector-solutions/PPPC032LFBN-RC/S7106-ND/810243][Female Header Connector]]      |            1.19 |        1 |             1.19 |
+|                              |                 |          |                0 |
+| [[https://www.digikey.ca/product-detail/en/c-k/JS202011SCQN/401-2002-1-ND/1640098][Slide Switch]]                 |            0.67 |        1 |             0.67 |
+| [[http://www.digikey.ca/product-detail/en/te-connectivity-alcoswitch-switches/FSM8JSMASTR/450-2135-1-ND/5343815][Green Button]]                 |            0.45 |        1 |             0.45 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577][10k Resistor]]                 |            0.15 |        1 |             0.15 |
+| [[http://www.digikey.ca/product-detail/en/te-connectivity-alcoswitch-switches/FSM8JSMAASTR/450-2136-1-ND/5343816][Red Button]]                   |            0.74 |        1 |             0.74 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577][10k Resistor]]                 |            0.15 |        1 |             0.15 |
+| [[http://www.digikey.ca/product-detail/en/soberton-inc/WT-1205/433-1028-ND/479674][Buzzer]]                       |            0.91 |        1 |             0.91 |
+|                              |                 |          |                0 |
+| [[http://www.robotshop.com/ca/en/lipo-battery-cell---37v-1200mah.html][LiPo Battery]]                 |           12.76 |        1 |            12.76 |
+| [[https://www.digikey.ca/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB(LF)(SN)/455-1749-1-ND/926846][Battery Connector]]            |            0.84 |        1 |             0.84 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577][10k Resistor]]                 |            0.15 |        1 |             0.15 |
+| [[https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876][4.7uF Capacitor]]              |            0.22 |        1 |             0.22 |
+|                              |                 |          |                0 |
+| [[http://www.digikey.ca/product-detail/en/microchip-technology/MIC2288YD5-TR/576-1729-1-ND/1799425][5V Boost Regulator]]           |            0.78 |        1 |             0.78 |
+| [[https://www.digikey.ca/product-detail/en/murata-electronics-north-america/DFE252010F-4R7M%3DP2/490-13038-1-ND/5812750][4.7uH Inductor]]               |            0.94 |        1 |             0.94 |
+| [[https://www.digikey.ca/product-detail/en/on-semiconductor/MBRM140T3G/MBRM140T3GOSCT-ND/917997][40V 1A Schottky Diode]]        |            0.57 |        1 |             0.57 |
+| [[https://www.digikey.ca/product-detail/en/yageo/RC0805FR-075K62L/311-5.62KCRCT-ND/730951][5.62k Resistor]]               |            0.15 |        1 |             0.15 |
+| [[https://www.digikey.ca/product-detail/en/yageo/RC0805FR-071K87L/311-1.87KCRCT-ND/730473][1.87k Resistor]]               |            0.15 |        1 |             0.15 |
+| [[https://www.digikey.ca/product-detail/en/samsung-electro-mechanics-america-inc/CL21A226MQCLQNC/1276-2412-1-ND/3890498][22uF Capacitor]]               |            0.33 |        1 |             0.33 |
+| [[https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876][4.7uF Capacitor]]              |            0.22 |        1 |             0.22 |
+|                              |                 |          |                0 |
+| [[http://www.digikey.ca/product-detail/en/hirose-electric-co-ltd/ZX62-B-5PA(33)/H125270CT-ND/5994756][MicroUSB Connector]]           |            1.22 |        1 |             1.22 |
+| [[https://www.digikey.ca/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802][Battery Charger]]              |            0.81 |        1 |             0.81 |
+| [[https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876][4.7uF Capacitor]]              |            0.22 |        2 |             0.44 |
+| [[https://www.digikey.ca/product-detail/en/lite-on-inc/LTST-C171KRKT/160-1427-1-ND/386800][Red LED (charging indicator)]] |            0.45 |        1 |             0.45 |
+| [[https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT470R/RMCF0805JT470RCT-ND/1942551][470 Resistor]]                 |            0.15 |        1 |             0.15 |
+| [[https://www.digikey.ca/product-detail/en/yageo/RC0805FR-072KL/311-2.00KCRCT-ND/730611][2k Resistor]]                  |            0.15 |        1 |             0.15 |
+|                              |                 |          |                0 |
+| [[http://www.digikey.ca/product-detail/en/newhaven-display-intl/NHD-0208AZ-RN-YBW/NHD-0208AZ-RN-YBW-ND/1701132][LCD]]                          |           11.96 |        1 |            11.96 |
+| [[http://www.digikey.ca/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ECT-ND/612911][10K Trimmer Potentiometer]]    |            0.42 |        3 |             1.26 |
+|------------------------------+-----------------+----------+------------------|
+| Total                        |           38.77 |          |            44.78 |
+|------------------------------+-----------------+----------+------------------|
+#+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
