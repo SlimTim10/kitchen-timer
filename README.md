@@ -7,3 +7,22 @@ A simple kitchen timer with two buttons and a buzzer for an alarm. On power up, 
 ## Hardware
 
 See file bom.org
+
+## ISP Programming
+
+The ATmega328P is loaded with the Arduino bootloader and can be programmed directly with an Arduino Uno.
+
+1. Make the following connections to the ISP header:
+
+| Arduino Uno | ISP Header |
+| :--- | :--- |
+| GND | 1 |
+| 5V | 2 |
+| 10 | 3 |
+| 11 | 4 |
+| 12 | 5 |
+| 13 | 6 |
+
+2. Load the sketch in the Arduino IDE.
+3. Set `Tools -> Programmer -> Arduino as ISP`.
+4. Select `Sketch -> Upload Using Programmer`.
