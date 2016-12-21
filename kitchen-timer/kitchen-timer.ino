@@ -11,6 +11,7 @@ enum pins {
 	BUTTON1 = 2,
 	BUTTON2 = 3,
 	BUZZER = 5,
+	BATTERY = 0,
 };
 
 enum config {
@@ -37,6 +38,7 @@ void display_alarm_time(void);
 void alarm(void);
 void increase_alarm_time(void);
 boolean button_press(uint8_t pin);
+float battery_voltage(void);
 
 LiquidCrystal lcd(LCD_RS, LCD_E, LCD_DB4, LCD_DB5, LCD_DB6, LCD_DB7);
 int alarm_minutes, alarm_seconds;
@@ -55,6 +57,8 @@ void setup() {
 	EEPROM.get(SECONDS_ADDRESS, alarm_seconds);
 
 	display_alarm_time();
+
+	float voltage = battery_voltage();
 
 	first_press = true;
 
@@ -149,4 +153,8 @@ boolean button_press(uint8_t pin) {
 		}
 	}
 	return false;
+}
+
+float battery_voltage(void) {
+	return analogRead(BATTERY) * (5.0 / 1023.0);
 }
