@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>bom</title>
+<!-- 2016-12-21 Wed 10:57 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">bom</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. BOM</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> BOM</h2>
+<div class="outline-text-2" id="text-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Name</th>
+<th scope="col" class="right">Unit Cost (CAD)</th>
+<th scope="col" class="right">Quantity</th>
+<th scope="col" class="right">Total Cost (CAD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/atmel/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589">ATMEGA328P MCU</a></td>
+<td class="right">5.34</td>
+<td class="right">1</td>
+<td class="right">5.34</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/fox-electronics/FOXSDLF-160-20/631-1017-1-ND/1024722">16MHz Crystal</a></td>
+<td class="right">0.46</td>
+<td class="right">1</td>
+<td class="right">0.46</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/kemet/C0805C220J5GACTU/399-1113-1-ND/411388">22pF Capacitor</a></td>
+<td class="right">0.28</td>
+<td class="right">2</td>
+<td class="right">0.56</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577">10k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR60J106ME19L/490-1718-1-ND/587425">10uF Capacitor</a></td>
+<td class="right">0.16</td>
+<td class="right">1</td>
+<td class="right">0.16</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT330R/RMCF0805JT330RCT-ND/1942547">330 Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">2</td>
+<td class="right">0.3</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/sullins-connector-solutions/PPPC032LFBN-RC/S7106-ND/810243">Female Header Connector</a></td>
+<td class="right">1.19</td>
+<td class="right">1</td>
+<td class="right">1.19</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/c-k/JS202011SCQN/401-2002-1-ND/1640098">Slide Switch</a></td>
+<td class="right">0.67</td>
+<td class="right">1</td>
+<td class="right">0.67</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/te-connectivity-alcoswitch-switches/FSM8JSMASTR/450-2135-1-ND/5343815">Green Button</a></td>
+<td class="right">0.45</td>
+<td class="right">1</td>
+<td class="right">0.45</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577">10k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/te-connectivity-alcoswitch-switches/FSM8JSMAASTR/450-2136-1-ND/5343816">Red Button</a></td>
+<td class="right">0.74</td>
+<td class="right">1</td>
+<td class="right">0.74</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577">10k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/soberton-inc/WT-1205/433-1028-ND/479674">Buzzer</a></td>
+<td class="right">0.91</td>
+<td class="right">1</td>
+<td class="right">0.91</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.robotshop.com/ca/en/lipo-battery-cell---37v-1200mah.html">LiPo Battery</a></td>
+<td class="right">12.76</td>
+<td class="right">1</td>
+<td class="right">12.76</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB(LF)(SN)/455-1749-1-ND/926846">Battery Connector</a></td>
+<td class="right">0.84</td>
+<td class="right">1</td>
+<td class="right">0.84</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT10K0/RMCF0805JT10K0CT-ND/1942577">10k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876">4.7uF Capacitor</a></td>
+<td class="right">0.22</td>
+<td class="right">1</td>
+<td class="right">0.22</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/microchip-technology/MIC2288YD5-TR/576-1729-1-ND/1799425">5V Boost Regulator</a></td>
+<td class="right">0.78</td>
+<td class="right">1</td>
+<td class="right">0.78</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/murata-electronics-north-america/DFE252010F-4R7M=P2/490-13038-1-ND/5812750">4.7uH Inductor</a></td>
+<td class="right">0.94</td>
+<td class="right">1</td>
+<td class="right">0.94</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/on-semiconductor/MBRM140T3G/MBRM140T3GOSCT-ND/917997">40V 1A Schottky Diode</a></td>
+<td class="right">0.57</td>
+<td class="right">1</td>
+<td class="right">0.57</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/yageo/RC0805FR-075K62L/311-5.62KCRCT-ND/730951">5.62k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/yageo/RC0805FR-071K87L/311-1.87KCRCT-ND/730473">1.87k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/samsung-electro-mechanics-america-inc/CL21A226MQCLQNC/1276-2412-1-ND/3890498">22uF Capacitor</a></td>
+<td class="right">0.33</td>
+<td class="right">1</td>
+<td class="right">0.33</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876">4.7uF Capacitor</a></td>
+<td class="right">0.22</td>
+<td class="right">1</td>
+<td class="right">0.22</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/hirose-electric-co-ltd/ZX62-B-5PA(33)/H125270CT-ND/5994756">MicroUSB Connector</a></td>
+<td class="right">1.22</td>
+<td class="right">1</td>
+<td class="right">1.22</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802">Battery Charger</a></td>
+<td class="right">0.81</td>
+<td class="right">1</td>
+<td class="right">0.81</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/murata-electronics-north-america/GRM21BR61E475KA12L/490-3335-1-ND/702876">4.7uF Capacitor</a></td>
+<td class="right">0.22</td>
+<td class="right">2</td>
+<td class="right">0.44</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/lite-on-inc/LTST-C171KRKT/160-1427-1-ND/386800">Red LED (charging indicator)</a></td>
+<td class="right">0.45</td>
+<td class="right">1</td>
+<td class="right">0.45</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805JT470R/RMCF0805JT470RCT-ND/1942551">470 Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left"><a href="https://www.digikey.ca/product-detail/en/yageo/RC0805FR-072KL/311-2.00KCRCT-ND/730611">2k Resistor</a></td>
+<td class="right">0.15</td>
+<td class="right">1</td>
+<td class="right">0.15</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/newhaven-display-intl/NHD-0208AZ-RN-YBW/NHD-0208AZ-RN-YBW-ND/1701132">LCD</a></td>
+<td class="right">11.96</td>
+<td class="right">1</td>
+<td class="right">11.96</td>
+</tr>
+
+<tr>
+<td class="left"><a href="http://www.digikey.ca/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ECT-ND/612911">10K Trimmer Potentiometer</a></td>
+<td class="right">0.42</td>
+<td class="right">3</td>
+<td class="right">1.26</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Total</td>
+<td class="right">38.77</td>
+<td class="right">&#xa0;</td>
+<td class="right">44.78</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2016-12-21 Wed 10:57</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
