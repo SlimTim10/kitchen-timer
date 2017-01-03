@@ -38,8 +38,8 @@
 | [[https://www.digikey.ca/product-detail/en/yageo/RC0805FR-072KL/311-2.00KCRCT-ND/730611][2k Resistor]]                  |            0.15 |        1 |             0.15 |
 |                              |                 |          |                0 |
 | [[http://www.digikey.ca/product-detail/en/newhaven-display-intl/NHD-0208AZ-RN-YBW/NHD-0208AZ-RN-YBW-ND/1701132][LCD]]                          |           11.96 |        1 |            11.96 |
-| [[http://www.digikey.ca/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ECT-ND/612911][10K Trimmer Potentiometer]]    |            0.42 |        3 |             1.26 |
+| [[http://www.digikey.ca/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ECT-ND/612911][10K Trimmer Potentiometer]]    |            0.42 |        1 |             0.42 |
 |------------------------------+-----------------+----------+------------------|
-| Total                        |           38.77 |          |            44.78 |
+| Total                        |           38.77 |          |            43.94 |
 |------------------------------+-----------------+----------+------------------|
 #+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
