@@ -8,8 +8,8 @@ enum pins {
 	LCD_DB5 = 10,
 	LCD_DB6 = 11,
 	LCD_DB7 = 12,
-	BUTTON1 = 2,
-	BUTTON2 = 3,
+	BUTTON1 = 3,
+	BUTTON2 = 2,
 	BUZZER = 5,
 	BATTERY = 0,
 };
@@ -49,7 +49,7 @@ char time_string[6];
 void setup() {
 	pinMode(BUTTON1, INPUT);
 	pinMode(BUTTON2, INPUT);
-	
+
 	lcd.begin(8, 2);
 	lcd.clear();
 
