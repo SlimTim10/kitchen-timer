@@ -8,6 +8,7 @@ A simple kitchen timer with two buttons and a buzzer for an alarm. On power up, 
 
 - LiPo battery with micro USB B port for charging
 - ISP headers for reprogramming
+- TODO: Battery charge indication on LCD
 
 ## Hardware
 
