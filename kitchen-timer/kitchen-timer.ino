@@ -28,6 +28,70 @@ enum constants {
 	SECONDS_ADDRESS = 0 + sizeof(int),
 };
 
+enum battery_icons {
+	BAT_FULL_ICON,
+	BAT_HIGH_ICON,
+	BAT_LOW_ICON,
+	BAT_EMPTY_ICON,
+};
+
+enum battery_icon_pos {
+	BAT_ICON_COL = 7,
+	BAT_ICON_ROW = 0,
+};
+
+/* Voltage * 100 to deal with int instead of float */
+enum battery_voltage {
+	BAT_FULL_VOLT = 380,
+	BAT_HIGH_VOLT = 370,
+	BAT_LOW_VOLT = 360,
+	BAT_EMPTY_VOLT = 350,
+};
+
+byte bat_full[8] = {
+	B01110,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+};
+
+byte bat_high[8] = {
+	B01110,
+	B10001,
+	B10001,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+	B11111,
+};
+
+byte bat_low[8] = {
+	B01110,
+	B10001,
+	B10001,
+	B10001,
+	B10001,
+	B11111,
+	B11111,
+	B11111,
+};
+
+byte bat_empty[8] = {
+	B01110,
+	B10001,
+	B10001,
+	B10001,
+	B10001,
+	B10001,
+	B10001,
+	B11111,
+};
+
 enum State {
 	IDLE = 0,
 	RUNNING,
@@ -38,7 +102,8 @@ void display_alarm_time(void);
 void alarm(void);
 void increase_alarm_time(void);
 boolean button_press(uint8_t pin);
-float battery_voltage(void);
+int battery_voltage(void);
+void display_battery(void);
 
 LiquidCrystal lcd(LCD_RS, LCD_E, LCD_DB4, LCD_DB5, LCD_DB6, LCD_DB7);
 int alarm_minutes, alarm_seconds;
@@ -51,14 +116,17 @@ void setup() {
 	pinMode(BUTTON2, INPUT);
 
 	lcd.begin(8, 2);
+	lcd.createChar(BAT_FULL_ICON, bat_full);
+	lcd.createChar(BAT_HIGH_ICON, bat_high);
+	lcd.createChar(BAT_LOW_ICON, bat_low);
+	lcd.createChar(BAT_EMPTY_ICON, bat_empty);
 	lcd.clear();
 
 	EEPROM.get(MINUTES_ADDRESS, alarm_minutes);
 	EEPROM.get(SECONDS_ADDRESS, alarm_seconds);
 
 	display_alarm_time();
-
-	float voltage = battery_voltage();
+	display_battery();
 
 	first_press = true;
 
@@ -85,12 +153,14 @@ void loop() {
 			increase_alarm_time();
 			lcd.clear();
 			display_alarm_time();
+			display_battery();
 			delay(100);
 		}
 		break;
 	case RUNNING:
 		lcd.clear();
 		display_alarm_time();
+		display_battery();
 		lcd.setCursor(0, 1);
 		sprintf(time_string, "%02d:%02d", minutes, seconds);
 		lcd.print(time_string);
@@ -101,6 +171,7 @@ void loop() {
 		if (minutes <= 0 && seconds <= 0) {
 			lcd.clear();
 			display_alarm_time();
+			display_battery();
 			lcd.setCursor(0, 1);
 			lcd.print("!!!!");
 			alarm();
@@ -155,6 +226,25 @@ boolean button_press(uint8_t pin) {
 	return false;
 }
 
-float battery_voltage(void) {
-	return analogRead(BATTERY) * (5.0 / 1023.0);
+/* Return battery voltage * 100 (to deal with int instead of float) */
+int battery_voltage(void) {
+	float mult = (5.0 / 1023.0) * 100.0;
+	float volt = (float) analogRead(BATTERY) * mult;
+	return (int) volt;
+}
+
+void display_battery(void) {
+	float voltage = battery_voltage();
+
+	lcd.setCursor(BAT_ICON_COL, BAT_ICON_ROW);
+	
+	if (voltage >= BAT_FULL_VOLT) {
+		lcd.write(byte(BAT_FULL_ICON));
+	} else if (voltage >= BAT_HIGH_VOLT) {
+		lcd.write(byte(BAT_HIGH_ICON));
+	} else if (voltage >= BAT_LOW_VOLT) {
+		lcd.write(byte(BAT_LOW_ICON));
+	} else {
+		lcd.write(byte(BAT_EMPTY_ICON));
+	}
 }
