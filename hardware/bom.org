@@ -30,7 +30,7 @@
 | [[https://www.digikey.ca/product-detail/en/yageo/CC0603MRX5R5BB226/311-1815-1-ND/5195717][22uF Capacitor]]               |            0.37 |        1 |             0.37 |
 | [[https://www.digikey.ca/product-detail/en/samsung-electro-mechanics-america-inc/CL10B475KQ8NQNC/1276-2087-1-ND/3890173][4.7uF Capacitor]]              |            0.15 |        1 |             0.15 |
 |                              |                 |          |                0 |
-| [[http://www.digikey.ca/product-detail/en/hirose-electric-co-ltd/ZX62-B-5PA(33)/H125270CT-ND/5994756][MicroUSB Connector]]           |            1.22 |        1 |             1.22 |
+| [[http://www.digikey.ca/product-detail/en/amphenol-fci/10118192-0001LF/609-4613-1-ND/2785378][MicroUSB Connector]]           |            0.67 |        1 |             0.67 |
 | [[https://www.digikey.ca/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802][Battery Charger]]              |            0.81 |        1 |             0.81 |
 | [[https://www.digikey.ca/product-detail/en/samsung-electro-mechanics-america-inc/CL10B475KQ8NQNC/1276-2087-1-ND/3890173][4.7uF Capacitor]]              |            0.15 |        2 |              0.3 |
 | [[https://www.digikey.ca/product-detail/en/lite-on-inc/LTST-C171KRKT/160-1427-1-ND/386800][Red LED (charging indicator)]] |            0.45 |        1 |             0.45 |
@@ -40,6 +40,6 @@
 | [[http://www.digikey.ca/product-detail/en/newhaven-display-intl/NHD-0208AZ-RN-YBW/NHD-0208AZ-RN-YBW-ND/1701132][LCD]]                          |            12.1 |        1 |             12.1 |
 | [[http://www.digikey.ca/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ECT-ND/612911][10K Trimmer Potentiometer]]    |            0.42 |        1 |             0.42 |
 |------------------------------+-----------------+----------+------------------|
-| Total                        |           38.77 |          |            41.41 |
+| Total                        |           38.77 |          |            40.86 |
 |------------------------------+-----------------+----------+------------------|
 #+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
