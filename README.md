@@ -20,7 +20,9 @@ The ATmega328P can be programmed directly with an Arduino Uno.
 
 1. Load the [Arduino bootloader](https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard) onto the ATmega328P.
 
-2. Make the following connections to the ISP header:
+2. Upload the ArduinoISP sketch onto your Arduino board.
+
+3. Make the following connections to the ISP header:
 
 | Arduino Uno | ISP Header |
 | :--- | :--- |
@@ -31,6 +33,7 @@ The ATmega328P can be programmed directly with an Arduino Uno.
 | 12 | 5 |
 | 13 | 6 |
 
-3. Load the sketch in the Arduino IDE.
-4. Set `Tools -> Board: "Arduino Pro or Pro Mini"`, `Tools -> Processor: "ATmega328 (5V, 16 MHz)", `Tools -> Programmer -> Arduino as ISP`.
-5. Select `Sketch -> Upload Using Programmer`.
+4. Load the sketch in the Arduino IDE.
+5. Set `Tools -> Board: "Arduino Pro or Pro Mini"`, `Tools -> Processor: "ATmega328 (5V, 16 MHz)", `Tools -> Programmer -> Arduino as ISP`.
+6. Select `Sketch -> Upload Using Programmer`.
+7. To reprogram, repeat steps 2-6.
